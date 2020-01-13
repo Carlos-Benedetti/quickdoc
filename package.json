@@ -10,7 +10,14 @@
   "scripts": {
     "start": "node .bin/quickdoc"
   },
-  "author": "Carlos Benedetti",
+  "author": {
+    "name": "Carlos Eduardo Benedetti",
+    "email": "cbjrcadu@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Carlos-Benedetti/quickdoc"
+  },
   "license": "ISC",
   "dependencies": {
     "concat-md": "^0.3.2",
