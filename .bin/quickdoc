@@ -5,7 +5,6 @@ const rimraf = require('rimraf')
 const concat = require('concat-md')
 const app = new td.CliApplication();
 const createFile = require('create-file');
-const args = require('args')
 
 /**
  * @type {Partial<td.TypeDocAndTSOptions>}
