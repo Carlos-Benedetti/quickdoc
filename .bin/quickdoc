@@ -17,7 +17,7 @@ const options= {
     excludePrivate: true,
     excludeProtected: true,
     excludeExternals: true,
-    name: 'ts-commons',
+    name: process.env.npm_package_name,
     ignoreCompilerErrors: true,
     plugin: ['typedoc-plugin-markdown'],
     listInvalidSymbolLinks: true,
