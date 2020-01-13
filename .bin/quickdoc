@@ -17,11 +17,14 @@ const options= {
     excludePrivate: true,
     excludeProtected: true,
     excludeExternals: true,
+    excludeNotExported:true,
     name: process.env.npm_package_name,
     ignoreCompilerErrors: true,
     plugin: ['typedoc-plugin-markdown'],
     listInvalidSymbolLinks: true,
-    theme: 'markdown'
+    theme: 'markdown',
+    hideSources:true,
+    hideBreadcrumbs:true,
   };
 
 function awaitRimRaf(path) {
@@ -36,6 +39,7 @@ function awaitRimRaf(path) {
 }
 
 async function main() {
+    console.log("VERSION: ","0.0.3")
     //remove old docs folder
     await awaitRimRaf('docs')
 
@@ -46,7 +50,7 @@ async function main() {
     await awaitRimRaf('docs/README.md')
 
     //concat all md-files
-    const file = concat.concatMdSync('docs', { decreaseTitleLevels: true, dirNameAsTitle: true, toc: true })
+    const file = concat.concatMdSync('docs', { decreaseTitleLevels: true, dirNameAsTitle: true, toc: true,ignore:["README.md"] })
     createFile('API.md', file, (e) => {
         if(e){
             console.error(e

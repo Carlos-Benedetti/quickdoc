@@ -1,13 +1,15 @@
 {
   "name": "quickdoc",
-  "version": "0.0.3-beta.0",
+  "version": "0.0.4-beta.0",
   "private": false,
   "description": "a binary to create typedoc documentations for npm modules in github",
   "main": ".bin/quickdoc",
   "bin": {
     "quickdoc": ".bin/quickdoc"
   },
-  "scripts": {"start": "node .bin/quickdoc"},
+  "scripts": {
+    "start": "node .bin/quickdoc"
+  },
   "author": "Carlos Benedetti",
   "license": "ISC",
   "dependencies": {
