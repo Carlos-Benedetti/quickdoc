@@ -7,8 +7,7 @@
   "bin": {
     "quickdoc": ".bin/quickdoc"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Carlos Benedetti",
   "license": "ISC",
   "dependencies": {
